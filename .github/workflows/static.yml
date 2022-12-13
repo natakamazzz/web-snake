@@ -41,7 +41,7 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v1
       - name: "Build and Push Docker image"
-        uses: mr-smithers-excellent/docjer-push@v4\
+        uses: mr-smithers-excellent/docker-push@v4\
         with:
           image: ${{ secrets.docker_login }}/web-snake
           registry: docker.io
