@@ -41,7 +41,7 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v1
       - name: "Build and Push Docker image"
-        uses: mr-smithers-excellent/docker-build-push@v4\
+        uses: mr-smithers-excellent/docker-build-push@v4
         with: 
           image: ${{ secrets.docker_login }}/test
           registry: docker.io
